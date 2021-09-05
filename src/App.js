@@ -30,7 +30,7 @@ function App() {
         } else if (query) {
           return [...oldPhotos, ...data.results];
         } else {
-          return [...oldPhotos, ...data];
+          return [...oldPhotos, ...data.results];
         }
       });
       setLoading(false);
